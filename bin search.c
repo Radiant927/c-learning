@@ -1,6 +1,7 @@
+//äºŒåˆ†æŸ¥æ‰¾æ³•
 #include<stdio.h>
 #include<stdlib.h>
-//ÏÈ°ÑÔ­À´µÄÊıÁĞ°´Ë³ĞòÅÅÁĞºÃ£¬ÔÚ´ÓÖĞ¼ä¿ªÊ¼ÍùÁ½²àÕÒ¶ÔÓ¦Öµ
+//å…ˆæŠŠåŸæ¥çš„æ•°åˆ—æŒ‰é¡ºåºæ’åˆ—å¥½ï¼Œåœ¨ä»ä¸­é—´å¼€å§‹å¾€ä¸¤ä¾§æ‰¾å¯¹åº”å€¼
 int binsearch(long num[],long x,int n);
 int main()
 {
@@ -14,10 +15,10 @@ int main()
 }
 int binsearch(long num[],long x,int n)
 {
-    int lleft=0,right=n-1,mid;//¼ÇÂ¼ÏÂÀ´µÄÊÇË÷Òı
+    int lleft=0,right=n-1,mid;//è®°å½•ä¸‹æ¥çš„æ˜¯ç´¢å¼•
     while(left<=right)
     {
-        mid=(left+right)/2;//Èç¹ûÒ»¹²ÓĞÆæÊı¸ö£¬mid%2==0¡£Å¼ÊıÔòÏà·´¡£
+        mid=(left+right)/2;//å¦‚æœä¸€å…±æœ‰å¥‡æ•°ä¸ªï¼Œmid%2==0ã€‚å¶æ•°åˆ™ç›¸åã€‚
         if(x>num[mid])
         {
             left=mid+1;
